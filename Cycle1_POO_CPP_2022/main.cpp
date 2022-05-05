@@ -15,6 +15,7 @@ int main() {
 	printf_s("version 1.0 du programme CPP\n");
 	printf_s("Introduction POO C++\n");
 
+	//Type Structure
 	vecteur tvect;
 
 	tvect.n_x = 0;
@@ -25,11 +26,15 @@ int main() {
 
 	//Type classe objet
 	CVecteur cVect;
-	cVect.m_nX = 0;
-	cVect.m_nY = 0;
-	cVect.m_nZ = 0;
 
-	cVect.initVect(8, 3, 9);
+	cVect.setX(5);
+	cVect.setY(2);
+	cVect.setZ(0);
+
+
+	printf_s("X:%d", cVect.getX());
+	printf_s("Y:%d", cVect.getY());
+	printf_s("Z:%d", cVect.getZ());
 
 	return 0;
 }

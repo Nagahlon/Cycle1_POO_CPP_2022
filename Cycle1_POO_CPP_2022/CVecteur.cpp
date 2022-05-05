@@ -1,9 +1,42 @@
 #include "CVecteur.h"
 
 
-void CVecteur::initVect(int nX, int nY, int nZ)
+CVecteur::CVecteur()
+{
+	this->m_nX=0;
+	this->m_nY=0;
+	this->m_nZ=0;
+}
+
+//Set
+void CVecteur::setX(int nX)
 {
 	this->m_nX = nX;
+}
+
+void CVecteur::setY(int nY)
+{
 	this->m_nY = nY;
+}
+
+void CVecteur::setZ(int nZ)
+{
 	this->m_nZ = nZ;
+}
+
+//Get
+
+int CVecteur::getX() const
+{
+	return this->m_nX;
+}
+
+int CVecteur::getY() const
+{
+	return this->m_nY;
+}
+
+int CVecteur::getZ() const
+{
+	return this->m_nZ;
 }
