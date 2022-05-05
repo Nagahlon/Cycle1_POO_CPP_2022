@@ -1,5 +1,6 @@
 #include "TVect.h"
 
+
 void initVecteur(vecteur* tVect, int nX, int nY, int nZ) {
 
 	tVect->n_x = nX;

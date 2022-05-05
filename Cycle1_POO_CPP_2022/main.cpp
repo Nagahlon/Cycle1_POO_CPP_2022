@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include "TVect.h"
+#include "CVecteur.h"
 
 
 int main() {
@@ -21,6 +22,14 @@ int main() {
 	tvect.n_z = 0;
 
 	initVecteur(&tvect, 5, 2, 9);
+
+	//Type classe objet
+	CVecteur cVect;
+	cVect.m_nX = 0;
+	cVect.m_nY = 0;
+	cVect.m_nZ = 0;
+
+	cVect.initVect(8, 3, 9);
 
 	return 0;
 }
