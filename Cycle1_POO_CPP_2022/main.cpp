@@ -25,7 +25,9 @@ int main() {
 	initVecteur(&tvect, 5, 2, 9);
 
 	//Type classe objet
-	CVecteur cVect;
+	CVecteur cVect; //Appel du constructeur sans paramètres
+
+	CVecteur cVect2(0, 0, 0); //Appel du constructeur avec paramètres
 
 	cVect.setX(5);
 	cVect.setY(2);
